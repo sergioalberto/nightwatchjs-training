@@ -1,0 +1,23 @@
+{
+  "name": "nightwatchjs-workshop",
+  "version": "1.0.0",
+  "description": "It is just a demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergioalberto/nightwatchjs-training"
+  },
+  "keywords": [
+    "node",
+    "nightwatch",
+    "npm"
+  ],
+  "author": "Sergio GQ",
+  "license": "MIT",
+  "dependencies": {
+    "nightwatch": "^0.9.21"
+  }
+}
