@@ -2,7 +2,7 @@
   "name": "nightwatchjs-workshop",
   "version": "1.0.0",
   "description": "It is just a demo",
-  "main": "index.js",
+  "main": "nightwatch.conf.js",
   "scripts": {
     "test": "nightwatch"
   },
@@ -19,6 +19,9 @@
   "author": "Sergio GQ",
   "license": "MIT",
   "dependencies": {
-    "nightwatch": "^0.9.21"
+    "nightwatch": "^0.9.21",
+    "selenium-server": "^3.14.0",
+    "chromedriver": "^2.41.0",
+    "geckodriver": "^1.12.2"
   }
 }
