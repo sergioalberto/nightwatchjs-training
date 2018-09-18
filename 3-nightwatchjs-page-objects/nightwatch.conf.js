@@ -3,11 +3,11 @@ const chromedriver = require('chromedriver');
 const geckodriver = require('geckodriver');
 
 module.exports = {
-    src_folders : ["tests"],
+    src_folders : ['tests'],
     output_folder: 'reports',
     custom_assertions_path: '',
     custom_commands_path: '',
-    page_objects_path: '',
+    page_objects_path: 'pages',
     live_output: false,
     disable_colors: false,
     globals_path: '',
