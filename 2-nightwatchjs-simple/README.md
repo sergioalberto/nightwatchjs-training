@@ -5,9 +5,6 @@
 npm i -D
 ```
 
-### Note 
-You should have a folder (`bin`) with the selenium-server and the drivers (`selenium-server-standalone-3.14.0.jar`, `chromedriver` and `geckodriver`)
-
 ##  Run the tests
 ```
 ./node_modules/.bin/nightwatch
