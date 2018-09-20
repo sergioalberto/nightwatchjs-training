@@ -17,7 +17,8 @@
     "node",
     "nightwatch",
     "npm",
-    "e2e"
+    "e2e",
+    "cucumber"
   ],
   "author": "Sergio GQ",
   "license": "MIT",

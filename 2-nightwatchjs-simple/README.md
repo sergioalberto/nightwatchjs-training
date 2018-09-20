@@ -1,11 +1,11 @@
-# Nightwatchjs-Training
+# Nightwatchjs-Training-Simple
 
 ##  Install NodeJS packages
 ```
 npm i -D
 ```
 
-##  Run test
+##  Run the tests
 ```
 ./node_modules/.bin/nightwatch
 or
