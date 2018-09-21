@@ -1,7 +1,8 @@
 module.exports = {
+    tags: ['google'],
     'Demo test expects Google' : function (client) {
         client
-        .url('http://google.no')
+        .url('http://google.com')
         .pause(1000);
         
         // expect element  to be present in 1000ms

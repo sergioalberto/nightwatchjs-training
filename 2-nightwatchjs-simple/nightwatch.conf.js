@@ -10,7 +10,7 @@ module.exports = {
     page_objects_path: '',
     live_output: false,
     disable_colors: false,
-    globals_path: '',
+    globals_path: './config/globalData.js',
     test_workers: {
         enabled: false,
         workers: 2,

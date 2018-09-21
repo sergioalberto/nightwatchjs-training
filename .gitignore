@@ -20,3 +20,7 @@
 /5-nightwatch-cucumber/reports/
 /5-nightwatch-cucumber/screenshots/
 /5-nightwatch-cucumber/selenium-debug.log
+/6-nightwatch-cucumber-api/chromedriver.log
+/6-nightwatch-cucumber-api/geckodriver.log
+/6-nightwatch-cucumber-api/node_modules/
+/6-nightwatch-cucumber-api/package-lock.json

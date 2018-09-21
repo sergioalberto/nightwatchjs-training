@@ -1,4 +1,5 @@
 module.exports = {
+    tags: ['google'],
     'Demo test Google' : function (client) {
         client
         .url('http://www.google.com')
@@ -10,7 +11,8 @@ module.exports = {
         .waitForElementVisible('button[name=btnG]', 1000)
         .click('button[name=btnG]')
         .pause(1000)
-        .assert.containsText('#rso > div:nth-child(1) > div > div:nth-child(1) > div > div > h3 > a',
+        .waitForElementVisible('#search .srg [href="https://es.wikipedia.org/wiki/Rembrandt"]', 5000)
+        .assert.containsText('#search .srg [href="https://es.wikipedia.org/wiki/Rembrandt"]',
             'Rembrandt - Wikipedia')
         .end();
     }
