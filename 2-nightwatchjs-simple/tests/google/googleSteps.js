@@ -1,4 +1,5 @@
 module.exports = {
+    tags: ['google'],
     'step one' : function (browser) {
         browser
         .url('http://www.google.com')
@@ -33,5 +34,5 @@ module.exports = {
     afterEach : function() {
         console.log('After step');
     }
-    
 };
+

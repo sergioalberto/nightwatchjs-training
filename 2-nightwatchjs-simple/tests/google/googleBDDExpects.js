@@ -3,7 +3,7 @@ module.exports = {
     'Demo test expects Google' : function (client) {
         client
         .url('http://google.com')
-        .pause(1000);
+        .waitForElementVisible('body', 5000)
         
         // expect element  to be present in 1000ms
         client.expect.element('body').to.be.present.before(1000);
