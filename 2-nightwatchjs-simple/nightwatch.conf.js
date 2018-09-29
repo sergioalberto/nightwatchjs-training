@@ -32,6 +32,7 @@ module.exports = {
                 waitForConditionTimeout: 30000,
                 waitForConditionPollInterval: 1000,
                 asyncHookTimeout: 50000,
+                googleLaunchUrl: 'http://www.google.com',
             },
             launch_url: 'http://localhost',
             selenium_port: 4444,

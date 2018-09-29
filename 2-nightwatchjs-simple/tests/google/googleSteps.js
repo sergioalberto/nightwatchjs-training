@@ -2,7 +2,7 @@ module.exports = {
     tags: ['google'],
     'step one' : function (browser) {
         browser
-        .url('http://www.google.com')
+        .url(browser.globals.googleLaunchUrl)
         .waitForElementVisible('body', 1000)
         .setValue('input[type=text]', 'nightwatch')
         .sendKeys('input[type=text]', browser.Keys.ENTER)

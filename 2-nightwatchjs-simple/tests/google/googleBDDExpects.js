@@ -2,7 +2,7 @@ module.exports = {
     tags: ['google'],
     'Demo test expects Google' : function (client) {
         client
-        .url('http://google.com')
+        .url(client.globals.googleLaunchUrl)
         .waitForElementVisible('body', 5000)
         
         // expect element  to be present in 1000ms

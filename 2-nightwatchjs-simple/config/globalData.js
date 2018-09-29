@@ -20,42 +20,35 @@ module.exports = {
     // or an error is thrown
     asyncHookTimeout : 10000,
     
+    githubLaunchUrl: 'http://github.com/nightwatchjs/nightwatch',
+    
     'default': {
         isLocal: true,
     },
-    
     'firefox' : {
         myGlobal: 'test_global',
-        beforeEach : function() {
-        
-        }
+        beforeEach : function() {}
     },
-    
     before : function(cb) {
-        console.log('GLOBAL BEFORE')
+        console.log('GLOBAL BEFORE');
         cb();
     },
-    
     beforeEach : function(browser, cb) {
-        console.log('GLOBAL beforeEach')
+        console.log('GLOBAL beforeEach');
         cb();
     },
-    
     after : function(cb) {
-        console.log('GLOBAL AFTER')
+        console.log('GLOBAL AFTER');
         cb();
     },
-    
     afterEach : function(browser, cb) {
         browser.perform(function() {
-            console.log('GLOBAL afterEach')
+            console.log('GLOBAL afterEach');
             cb();
         })
-        
     },
-    
     reporter : function(results, cb) {
+        console.log('REPORT');
         cb();
     }
-    
 }
