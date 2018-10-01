@@ -11,7 +11,7 @@ module.exports = {
     url: 'http://google.com',
     commands: [searchCommands],
     elements: {
-        searchBar: {selector: 'input[name=q]'},
+        searchBar: {selector: 'input[name="q"]'},
         submitButton: {selector: '[name="btnK"]'}
     }
 };

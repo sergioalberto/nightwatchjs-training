@@ -7,7 +7,9 @@ require('nightwatch-cucumber')({
         '--require', 'step_definitions',
         '--format', 'node_modules/cucumber-pretty',
         '--format', 'json:reports/cucumber.json',
+        '--format-options', '{"colorsEnabled":true}',
         'features'],
+    nightwatchOutput: true
 });
 
 module.exports = {
@@ -46,7 +48,7 @@ module.exports = {
                 path: 'screenshots',
             },
             videos: {
-                enabled: false,
+                enabled: true,
                 delete_on_success: true,
                 path: 'videos',
             },

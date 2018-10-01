@@ -7,7 +7,8 @@
     "test": "nightwatch --retries 2",
     "test-chrome": "nightwatch --env chrome --retries 2",
     "test-chrome-headless": "nightwatch --env chromeHeadless --retries 2",
-    "test-firefox": "nightwatch --env firefox --retries 2"
+    "test-firefox": "nightwatch --env firefox --retries 2",
+    "report": "node libs/report.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,9 @@
     "chromedriver": "^2.41.0",
     "geckodriver": "^1.12.2",
     "cucumber": "^4.2.1",
+    "nightwatch-cucumber": "^9.1.2",
     "cucumber-pretty": "^1.4.0",
-    "nightwatch-cucumber": "^9.1.2"
+    "cucumber-html-reporter": "^4.0.3",
+    "nightwatch-video-recorder": "^1.1.0"
   }
 }
