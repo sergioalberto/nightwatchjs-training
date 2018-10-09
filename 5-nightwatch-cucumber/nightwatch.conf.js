@@ -4,6 +4,7 @@ const geckodriver = require('geckodriver');
 
 require('nightwatch-cucumber')({
     cucumberArgs: [
+        '--require', 'libs/hooks.js',
         '--require', 'step_definitions',
         '--format', 'node_modules/cucumber-pretty',
         '--format', 'json:reports/cucumber.json',
@@ -48,9 +49,14 @@ module.exports = {
                 path: 'screenshots',
             },
             videos: {
-                enabled: true,
+                enabled: false,
                 delete_on_success: true,
                 path: 'videos',
+                format: 'mp4',
+                resolution: '1440x900',
+                fps: 15,
+                display: ':60',
+                pixel_format: 'yuv420p'
             },
             launch_url: 'http://localhost',
             selenium_port: 4444,
