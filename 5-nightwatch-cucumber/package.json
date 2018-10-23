@@ -8,7 +8,8 @@
     "test-chrome": "nightwatch --env chrome --retries 2",
     "test-chrome-headless": "nightwatch --env chromeHeadless --retries 2",
     "test-firefox": "nightwatch --env firefox --retries 2",
-    "report": "node libs/report.js"
+    "report": "node libs/report.js",
+    "debug": "node --inspect node_modules/nightwatch/bin/nightwatch"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,8 @@
     "nightwatch-cucumber": "^9.1.2",
     "cucumber-pretty": "^1.4.0",
     "cucumber-html-reporter": "^4.0.3",
-    "nightwatch-video-recorder": "^1.1.0"
+    "nightwatch-video-recorder": "^1.1.0",
+    "nightwatch-helpers": "^1.2.0",
+    "nightwatch-custom-commands-assertions": "^1.1.1"
   }
 }

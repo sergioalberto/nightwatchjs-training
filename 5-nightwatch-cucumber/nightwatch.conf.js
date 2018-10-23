@@ -15,8 +15,12 @@ require('nightwatch-cucumber')({
 
 module.exports = {
     output_folder: 'reports',
-    custom_assertions_path: '',
-    custom_commands_path: '',
+    custom_assertions_path: ['libs/assertions/',
+        'node_modules/nightwatch-custom-commands-assertions/js/assertions',
+        'node_modules/nightwatch-helpers/assertions'],
+    custom_commands_path: ['libs/commands/',
+        'node_modules/nightwatch-custom-commands-assertions/js/commands',
+        'node_modules/nightwatch-helpers/commands'],
     page_objects_path: 'page_objects',
     live_output: false,
     disable_colors: false,
