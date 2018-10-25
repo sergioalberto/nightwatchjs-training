@@ -1,8 +1,11 @@
 const searchCommands = {
+    lookingFor(textToLookingFor){
+        this.expect.element('@searchBar').to.be.enabled;
+        return this.setValue('@searchBar', textToLookingFor)
+    },
     submit() {
         this.waitForElementVisible('@submitButton', 10000)
-        .click('@submitButton')
-        .api.pause(1000);
+            .sendKeys('@searchBar', this.api.Keys.ENTER).api.pause(3000);
         return this; // Return page object for chaining
     }
 };

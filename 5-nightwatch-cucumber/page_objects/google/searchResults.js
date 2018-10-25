@@ -13,8 +13,17 @@ const menuCommands = {
 
 module.exports = {
     elements: {
-        results: {selector: '#ires'}
+        results: {selector: '#ires'},
+        titleResults: ".r h3"
     },
+    commands: [{
+        lookingForResults(textToLookingFor){
+            this.expect.element('@results').to.be.present.after(5000);
+            this.expect.element('@results').to.contain.text(textToLookingFor);
+            this.waitForElementVisible("@titleResults", 10000)
+            this.clickElementWithText("@titleResults", textToLookingFor);
+        }
+    }],
     sections: {
         menu: {
             selector: '#hdtb-msb',
