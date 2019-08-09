@@ -7,10 +7,10 @@ module.exports = {
         .assert.visible('input[type=text]')
         .setValue('input[type=text]', 'rembrandt van rijn')
         .sendKeys('input[type=text]', client.Keys.ENTER)
-        .waitForElementVisible('button[name=btnG]', 1000)
-        .click('button[name=btnG]')
+        //.waitForElementVisible('button[name=btnG]', 1000)
+        //.click('button[name=btnG]')
         .pause(1000)
-        .assert.containsText('#rso > div:nth-child(1) > div > div:nth-child(1) > div > div > h3 > a', 'Rembrandt - Wikipedia')
+        .assert.containsText('#rso > div:nth-child(1) > div > div:nth-child(1)', 'Rembrandt - Wikipedia')
         .end();
     }
 };
